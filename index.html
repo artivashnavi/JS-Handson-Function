@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>JS Handson-7</h1></center>
+    <pre>
+        Ques.1 Create one function with zero parameter having a console statement.
+        Ans.
+        function MyFunc(){
+            console.log("HelloPrepbytes")
+        }
+        MyFunc();
+
+        output:
+        Hello
+
+        Ques.2 Create one function which takes two values as a parameter and print the sum of them as "sum of 3,4 is 7".
+        Ans.
+        function AddFunc(x , y){
+            const sum = x + y;
+            console.log("Sum of 3,4 is" +sum);
+        }
+        AddFunc(3,4);
+        output:
+        Sum of 3,4 is7
+
+        Ques.3 Create one arrow function.
+        Ans.
+        const AddTwoNumbers = (x,y) => {
+
+            return x+y;
+         
+         };
+     Sample Input
+     2 5
+
+     Sample Output
+     7
+
+    Ques.4 Print output:
+    var x=21;
+    var girl= function() {
+     console.log(x);
+     var x=20;
+    };
+    Ans. Output:
+    undefined
+
+
+   Ques.5 Print output:
+   var x=21;
+   girl() 
+    console.log(x);
+
+    function girl() 
+    {
+        console.log(x);  
+        var x=20;
+    };
+   Ans. Output:
+
+     undefined
+    21
+
+    Ques.6 Print output:
+    var x=21;
+    a();
+    b(); 
+   
+    function a() {
+        x=20;
+        console.log(x);  
+     
+};
+function b() {
+    x=40;
+    console.log(x);
+};
+Ans.
+ Output:
+
+20
+40
+
+Ques.7 Write a function that accepts parameters n and return factorial of n.
+Ans.
+function factorial(n){
+    let result = 1;
+    if (n == 0 || n == 1){
+      return result;
+    }else{
+      for(var i = n; i >= 1; i--){
+        result = result * i;
+      }
+      return result;
+    }  
+  }
+  let n = 4;
+  result = factorial(n)
+  console.log("The factorial of " + n + " is " + result);
+
+Output:
+
+The factorial of 4 is 24
+    </pre>
+</body>
+</html>
